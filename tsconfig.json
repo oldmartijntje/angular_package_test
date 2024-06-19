@@ -10,15 +10,15 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "paths": {
-      "my-lib": [
-        "./dist/my-lib"
-      ]
-    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
     "experimentalDecorators": true,
+    "paths": {
+      "oldmartijntjes-angular-test-lib": [
+        "./dist/oldmartijntjes-angular-test-lib"
+      ]
+    },
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
