@@ -15,6 +15,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Navigate to package directory
+        run: cd projects/oldmartijntjes-angular-test-lib
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
@@ -26,9 +29,6 @@ jobs:
 
       - name: Build Angular library
         run: npm run build
-
-      - name: Navigate to package directory
-        run: cd projects/oldmartijntjes-angular-test-lib
 
       - name: Publish package to GitHub Packages
         run: npm publish --access public
