@@ -31,9 +31,13 @@ jobs:
           echo "Updated package.json version to $TAG_VERSION"
 
       - name: Build Angular library
-        run: cd projects/oldmartijntjes-angular-test-lib;npm run build oldmartijntjes-angular-test-lib
+        run: 
+          cd projects/oldmartijntjes-angular-test-lib
+          npm run build oldmartijntjes-angular-test-lib
 
       - name: Publish package to GitHub Packages
-        run: cd projects/oldmartijntjes-angular-test-lib;npm publish --access public
+        run: 
+          cd projects/oldmartijntjes-angular-test-lib
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
