@@ -27,7 +27,10 @@ jobs:
       - name: Build Angular library
         run: npm run build oldmartijntjes-angular-test-lib
 
+      - name: Navigate to package directory
+        run: cd projects/oldmartijntjes-angular-test-lib
+
       - name: Publish package to GitHub Packages
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
