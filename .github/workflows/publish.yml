@@ -22,6 +22,13 @@ jobs:
 
       - run: npm ci
 
+      - name: Update package.json version
+        run: |
+          TAG_VERSION=$(echo "${GITHUB_REF}" | sed -n 's/refs\/tags\/v\(.*\)/\1/p')
+          echo "Tag version: $TAG_VERSION"
+          npm --no-git-tag-version version "$TAG_VERSION"
+          echo "Updated package.json version to $TAG_VERSION"
+
       - name: Build Angular library
         run: cd projects/oldmartijntjes-angular-test-lib;npm run build oldmartijntjes-angular-test-lib
 
