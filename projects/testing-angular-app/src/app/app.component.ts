@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
     template: `
     <h1>Welcome to {{title}}!</h1>
     <lib-oldmartijntjes-angular-test-lib></lib-oldmartijntjes-angular-test-lib>
+    <lib-oldmartijntjes-angular-test-lib></lib-oldmartijntjes-angular-test-lib>
+    <lib-oldmartijntjes-angular-test-lib></lib-oldmartijntjes-angular-test-lib>
+    <lib-oldmartijntjes-angular-test-lib></lib-oldmartijntjes-angular-test-lib>
     <router-outlet />
   `,
     styles: []
