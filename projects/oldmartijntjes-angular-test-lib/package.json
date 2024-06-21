@@ -1,5 +1,5 @@
 {
-    "name": "oldmartijntjes-angular-test-lib",
+    "name": "@oldmartijntje/oldmartijntjes-angular-test-lib",
     "version": "0.0.3",
     "peerDependencies": {
         "@angular/common": "^17.3.0",
