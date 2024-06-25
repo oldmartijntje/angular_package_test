@@ -42,3 +42,6 @@ Thumbs.db
 
 /dist/*
 !/dist/oldmartijntjes-angular-test-lib/
+
+.nx/cache
+.nx/workspace-data
